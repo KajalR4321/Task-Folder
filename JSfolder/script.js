@@ -141,8 +141,8 @@ const dotsContainer = document.getElementById('bannerDots');
 const template2 = document.getElementById('banner-template');
 
 let currentIndex = 0;
-let autoPlayInterval;
-const slideDuration = 5000; // 5 seconds
+// let autoPlayInterval;
+
 
 // 1. Build the UI
 function init() {

@@ -112,30 +112,32 @@ body{
 /* Content Positioning */
 .main-content {
   position: absolute;
-  top: 50%;
+   top: 50%;
   left: 8%;
   transform: translateY(-50%);
   color: #fff;
   z-index: 10;
   max-width: 600px;
+  margin-left: 35rem;
+  
+
 }
 
 .main-title {
   margin-bottom: 20px;
+  
 }
 
 .main-title span {
   display: block;
-  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive font sizes */
+  font-size: 4.7rem; 
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -1px;
   text-transform: uppercase;
 }
 
-.main-title span:nth-child(2) {
-  color: #d4b03a; /* Accent color */
-}
+
 
 .banner-desc {
   font-size: 1.1rem;
@@ -143,13 +145,13 @@ body{
   margin-bottom: 30px;
   opacity: 0.9;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
 }
 
 .main-btn {
   display: inline-block;
   padding: 15px 40px;
-  background: #d4b03a;
+  background: #438029;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -158,8 +160,9 @@ body{
 }
 
 .main-btn:hover {
-  background: #fff;
-  color: #000;
+  background: yellowgreen;
+ 
+  color: #e9e2e2;
   transform: translateY(-3px);
 }
 
