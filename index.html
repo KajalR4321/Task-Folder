@@ -1,202 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kush Chaturvedi</title>
-    <link rel="stylesheet" href="./CSSfolder/Style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kush Chaturvedi</title>
+  <link rel="stylesheet" href="./CSSfolder/Style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo">
-  <h1 > 
-           <span class="kush">KUSH</span><span class="chaturvedi">CHATURVEDI</span>
+  <header class="header">
+    <div class="logo">
+      <h1>
+        <span class="kush">KUSH</span><span class="chaturvedi">CHATURVEDI</span>
 
-  </h1>
-    <p>GLOBAL BUSINESS COACH</p>
- </div>
+      </h1>
+      <p>GLOBAL BUSINESS COACH</p>
+    </div>
 
-  <nav class="navigation">
-    <ul>
-      <li><a href="/About">ABOUT</a></li>
-      <li><a href="/services">SERVICES</a></li>
-      <li><a href="/books">BOOKS</a></li>
-      <li><a href="/testimonial">TESTIMONIAL</a></li>
-      <li><a href="/upcomingEvents">UPCOMING EVENTS </a></li>
-    </ul>
-  </nav>
+    <nav class="navigation">
+      <ul>
+        <li><a href="/About">ABOUT</a></li>
+        <li><a href="/services">SERVICES</a></li>
+        <li><a href="/books">BOOKS</a></li>
+        <li><a href="/testimonial">TESTIMONIAL</a></li>
+        <li><a href="/upcomingEvents">UPCOMING EVENTS </a></li>
+      </ul>
+    </nav>
 
-  <a href="/contact" class="contact-btn">CONTACT US</a>
-</header>
-<!-- section img -->
- <section class="main">
-    <img src="./assets/mainimg.png" >
-    <div class="main-content">
-  <h1 class="main-title"> <span>GLOBAL</span>
-  <span>BUSINESS</span>
-  <span>COACH</span>
-     
-    </h1>
+    <a href="/contact" class="contact-btn">CONTACT US</a>
+  </header>
+  <!-- section img -->
+  <section class="main-slider">
+  <div class="banner-container" id="bannerContainer">
+    </div>
 
-    <p>
-      LOREM IPSUM IS SIMPLY DUMMY TEXT OF<br> THE PRINTING AND TYPESETTING INDUSTRY.
+  <button class="banner-nav prev" id="bannerPrev">&#10094;</button>
+  <button class="banner-nav next" id="bannerNext">&#10095;</button>
 
-    <a href="#" class="main-btn">BUY NOW</a>
-  </div>
- </section>
- <section class="about" id="about">
-  <div class="about-wrapper">
+  <div class="banner-dots" id="bannerDots"></div>
 
-    <!-- LEFT SIDE -->
-    <div class="about-left">
-      <img class="about-bg" src="./assets/gradientimg.svg" alt="Gradient Background">
-
-      <div class="about-content">
-        <h1>ABOUT KUSHCHATURVEDI</h1>
-        <p class="p1">
-          Mr. Kush Chaturvedi, Chairman and Managing Director (CMD) of
-          Aatmnirbhar Group of Companies, began his journey about 10 years
-          back as a self-help group in the training sector on proprietorship basis.
-          He has progressed in leaps and bounds.
-        </p>
-
-        <h3>KUSH CHATURVEDI</h3>
-        <p class="p2">
-          Mr. Kush Chaturvedi has trained more than 700+ persons on sales
-          process and various smart business strategies for ICICI Prudential
-          and ICICI Bank.
-        </p>
+  <template id="banner-template">
+    <div class="banner-slide">
+      <img src="" alt="Banner Image">
+      <div class="main-content">
+        <h1 class="main-title">
+          <span class="t1"></span>
+          <span class="t2"></span>
+          <span class="t3"></span>
+        </h1>
+        <p class="banner-desc"></p>
+        <a href="#" class="main-btn">BUY NOW</a>
       </div>
     </div>
+  </template>
+</section>
+  <section class="about" id="about">
+    <div class="about-wrapper">
 
-    <!-- RIGHT SIDE -->
-    <div class="about-right">
-      <img src="./assets/images.jpg" alt="Kush Chaturvedi" class="about-person-img">
+      <!-- LEFT SIDE -->
+      <div class="about-left">
+        <img class="about-bg" src="./assets/gradientimg.svg" alt="Gradient Background">
+
+        <div class="about-content">
+          <h1>ABOUT KUSHCHATURVEDI</h1>
+          <p class="p1">
+            Mr. Kush Chaturvedi, Chairman and Managing Director (CMD) of
+            Aatmnirbhar Group of Companies, began his journey about 10 years
+            back as a self-help group in the training sector on proprietorship basis.
+            He has progressed in leaps and bounds.
+          </p>
+
+          <h3>KUSH CHATURVEDI</h3>
+          <p class="p2">
+            Mr. Kush Chaturvedi has trained more than 700+ persons on sales
+            process and various smart business strategies for ICICI Prudential
+            and ICICI Bank.
+          </p>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="about-right">
+        <img src="./assets/images.jpg" alt="Kush Chaturvedi" class="about-person-img">
+      </div>
+
     </div>
+  </section>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section class="services_section">
+    <div class="services_section_container">
+
+      <!-- LEFT CONTENT -->
+      <div class="services_section_left">
+        <h2 class="services_heading">
+          <span class="out_text">OUT</span>
+          <span class="services_text">SERVICES</span>
+        </h2>
+
+        <p>
+          We have conducted many mind power workshops and helped
+          people find and achieve their goal, solve their problems
+          in life and career, discover their passion and work
+          towards it and power to take quick and wise decisions.
+          Thousands of people are benefited and become successful
+          through his mind-power training.
+        </p>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="services_section_right">
+
+        <!-- Cards -->
+        <div class="card yellow">
+          <div class="card_text">SCIENCE OF<br>MIND</div>
+          <div class="card_arrow">→</div>
+        </div>
+
+        <div class="card green">
+          <div class="card_text">SCIENCE OF<br>MONEY</div>
+          <div class="card_arrow">→</div>
+        </div>
+
+        <div class="card yellow">
+          <div class="card_text">STRESS<br>MANAGEMENT</div>
+          <div class="card_arrow">→</div>
+        </div>
+
+        <div class="card green">
+          <div class="card_text">SCIENCE OF<br>MONEY ADVANCE</div>
+          <div class="card_arrow">→</div>
+        </div>
+
+        <div class="card yellow">
+          <div class="card_text">TRAIN THE<br>TRAINER</div>
+          <div class="card_arrow">→</div>
+        </div>
+
+        <!-- Decor: Top-left blnck card -->
+        <span class="decor big d1"></span>
+        <span class="decor small d1 tl"></span>
+        <span class="decor small d1 br"></span>
+
+        <!-- Decor: Right-middle -->
+        <span class="decor big d2"></span>
+        <span class="decor small d2 tl"></span>
+        <span class="decor small d2 br"></span>
+
+
+        <!-- Decor: Bottom -->
+        <span class="decor big d3"></span>
+        <span class="decor small d3 tl"></span>
+        <span class="decor small d3 br"></span>
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BOOKS SECTION ================= -->
+  <section class="books_section">
+
+    <!-- Tabs -->
+    <div class="book_section_top">
+      <button class="book_tab" data-book="1">BOOK-01</button>
+      <button class="book_tab active" data-book="2">BOOK-02</button>
+      <button class="book_tab" data-book="3">BOOK-03</button>
+      <button class="book_tab" data-book="4">BOOK-04</button>
+    </div>
+
+    <!-- Content -->
+    <div class="book_section_bottom">
+      <div class="book_image">
+        <img id="bookImg" src="./assets/top-view-pile-books.png" alt="image">
+      </div>
+
+      <div class="book_text">
+        <h2 id="bookTitle">BOOK-02</h2>
+        <p id="bookDesc">
+          We have conducted many mind power workshops and helped
+          people find and achieve their goal, solve their problems
+          in life and career, discover their passion and work
+          towards it and power to take quick and wise decisions.
+          Thousands of people are benefited and become successful
+          through his mind-power training.
+        </p>
+        <button class="buy_btn">BUY NOW</button>
+      </div>
+    </div>
+  </section>
+  <!-- ================= UPCOMING EVENTS SECTION ================= -->
+  <section class="events-section">
+  <h1 class="events-title"><span>UPCOMING</span> <span>EVENTS</span></h1>
+
+  <div class="carousel-wrapper">
+    <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+    
+    <div class="carousel-viewport">
+      <div class="event-container" id="eventContainer">
+        </div>
+    </div>
+
+    <button class="nav-btn next" id="nextBtn">&#10095;</button>
+  </div>
+
+  <template id="event-template">
+    <div class="event-card">
+      <img src="" alt="">
+      <div class="img-content">
+        <h2></h2>
+        <p></p>
+        <a href="#" class="event-btn">BOOK NOW</a>
+      </div>
+    </div>
+  </template>
+</section>
+  <!-- ================= TESTINOMONIAL SECTION ================= -->
+
+
+<section>
+  <h1>TESTIMONIAL</h1>
+  <div class="testimonial-container">
 
   </div>
 </section>
 
- <!-- ================= SERVICES SECTION ================= -->
-    <section class="services_section">
-        <div class="services_section_container">
-
-            <!-- LEFT CONTENT -->
-            <div class="services_section_left">
-                <h2 class="services_heading">
-                    <span class="out_text">OUT</span>
-                    <span class="services_text">SERVICES</span>
-                </h2>
-
-                <p>
-                    We have conducted many mind power workshops and helped
-                    people find and achieve their goal, solve their problems
-                    in life and career, discover their passion and work
-                    towards it and power to take quick and wise decisions.
-                    Thousands of people are benefited and become successful
-                    through his mind-power training.
-                </p>
-            </div>
-
-            <!-- RIGHT CONTENT -->
-            <div class="services_section_right">
-
-                <!-- Cards -->
-                <div class="card yellow">
-                    <div class="card_text">SCIENCE OF<br>MIND</div>
-                    <div class="card_arrow">→</div>
-                </div>
-
-                <div class="card green">
-                    <div class="card_text">SCIENCE OF<br>MONEY</div>
-                    <div class="card_arrow">→</div>
-                </div>
-
-                <div class="card yellow">
-                    <div class="card_text">STRESS<br>MANAGEMENT</div>
-                    <div class="card_arrow">→</div>
-                </div>
-
-                <div class="card green">
-                    <div class="card_text">SCIENCE OF<br>MONEY ADVANCE</div>
-                    <div class="card_arrow">→</div>
-                </div>
-
-                <div class="card yellow">
-                    <div class="card_text">TRAIN THE<br>TRAINER</div>
-                    <div class="card_arrow">→</div>
-                </div>
-
-                <!-- Decor: Top-left blnck card -->
-                <span class="decor big d1"></span>
-                <span class="decor small d1 tl"></span>
-                <span class="decor small d1 br"></span>
-
-                <!-- Decor: Right-middle -->
-                <span class="decor big d2"></span>
-                <span class="decor small d2 tl"></span>
-                <span class="decor small d2 br"></span>
-              
-
-                 <!-- Decor: Bottom -->
-                <span class="decor big d3"></span>
-                <span class="decor small d3 tl"></span>
-                <span class="decor small d3 br"></span>
 
 
 
-                
- 
 
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ================= BOOKS SECTION ================= -->
-    <section class="books_section">
-
-        <!-- Tabs -->
-        <div class="book_section_top">
-            <button class="book_tab">BOOK-01</button>
-            <button class="book_tab active">BOOK-02</button>
-            <button class="book_tab">BOOK-03</button>
-            <button class="book_tab">BOOK-04</button>
-        </div>
-
-        <!-- Content -->
-        <div class="book_section_bottom">
-
-            <!-- Image -->
-            <div class="book_image">
-                <img src="./assets/top-view-pile-books.png" alt="image">
-            </div>
-            <!-- Text -->
-            <div class="book_text">
-                <h2>BOOK-02</h2>
-                <p>
-                    We have conducted many mind power workshops and helped
-                    people find and achieve their goal, solve their problems
-                    in life and career, discover their passion and work
-                    towards it and power to take quick and wise decisions.
-                    Thousands of people are benefited and become successful
-                    through his mind-power training.
-                </p>
-                <button class="buy_btn">BUY NOW</button>
-            </div>
-
-        </div>
-
-    </section>
-<!-- footer -->
-<footer>
-  hellooo i am a footer
-  <br>
-  I am a good worker
-</footer>
-
-
+  <script src="JSfolder/script.js" type="module"></script>
 
 </body>
+
 </html>
