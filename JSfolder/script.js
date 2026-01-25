@@ -48,6 +48,17 @@ const tabs = document.querySelectorAll(".book_tab");
 const bookImg = document.getElementById("bookImg");
 const bookTitle = document.getElementById("bookTitle");
 const bookDesc = document.getElementById("bookDesc");
+//use fortestnomial
+const cards = document.querySelectorAll(
+    '.testimonial_cards_1, .testimonial_cards_2, .testimonial_cards_3'
+  );
+  //testinomial card
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c.classList.remove('testimonial_active'));
+      card.classList.add('testimonial_active');
+    });
+  });
 
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
@@ -141,7 +152,7 @@ const dotsContainer = document.getElementById('bannerDots');
 const template2 = document.getElementById('banner-template');
 
 let currentIndex = 0;
-// let autoPlayInterval;
+
 
 
 // 1. Build the UI
@@ -167,7 +178,7 @@ function init() {
     dot.addEventListener('click', () => {
       currentIndex = i;
       updateUI();
-      startAutoPlay(); // Reset timer
+      startAutoPlay();
     });
     dotsContainer.appendChild(dot);
   });
@@ -184,24 +195,22 @@ function updateUI() {
   });
 }
 
-// 3. AutoPlay Mechanics
+
 function startAutoPlay() {
-  stopAutoPlay(); // Clear existing
+  
   autoPlayInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % bannerData.length;
     updateUI();
   }, slideDuration);
 }
 
-function stopAutoPlay() {
-  clearInterval(autoPlayInterval);
-}
 
-// 4. Pro Feature: Pause on Hover
+
+// 4.
 const mainSlider = document.querySelector('.main-slider');
-mainSlider.addEventListener('mouseenter', stopAutoPlay);
+
 mainSlider.addEventListener('mouseleave', startAutoPlay);
 
-// Initial Launch
+
 init();
 startAutoPlay();
