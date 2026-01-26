@@ -1,6 +1,7 @@
 
 import eventData from './data/eventData.js';
 import bannerData from './data/bannerData.js';
+
 const bookData = {
   1: {
     title: "BOOK-01",
@@ -214,3 +215,20 @@ mainSlider.addEventListener('mouseleave', startAutoPlay);
 
 init();
 startAutoPlay();
+
+  const burger = document.getElementById("hamburger");
+  const nav = document.getElementById("navigation");
+  const navLinks = document.querySelectorAll(".navigation a");
+
+  // Toggle menu
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  // Close menu when clicking link
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
+  });
+
