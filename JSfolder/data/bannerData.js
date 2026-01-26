@@ -14,7 +14,7 @@ const bannerData = [
     title2: "STRATEGY",
     title3: "GROWTH",
     text: "TRANSFORM YOUR BUSINESS WITH MODERN STRATEGIES THAT WORK.",
-    img: "./assets/mainimg.png" // Replace with your actual path
+    img: "./assets/mainimg.png" 
   }
 ];
 

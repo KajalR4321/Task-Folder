@@ -752,7 +752,7 @@ body{
   cursor: pointer;
 }
 
-/* hover effect */
+
 .testimonial_cards_1:hover,
 .testimonial_cards_2:hover,
 .testimonial_cards_3:hover {
@@ -773,7 +773,7 @@ body{
  
 }
 
-/* hovered card  active effect */
+
 .testimonial_cards_1:hover,
 .testimonial_cards_2:hover,
 .testimonial_cards_3:hover {

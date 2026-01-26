@@ -206,7 +206,7 @@ function startAutoPlay() {
 
 
 
-// 4.
+
 const mainSlider = document.querySelector('.main-slider');
 
 mainSlider.addEventListener('mouseleave', startAutoPlay);
