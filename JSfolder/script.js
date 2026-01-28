@@ -216,19 +216,20 @@ mainSlider.addEventListener('mouseleave', startAutoPlay);
 init();
 startAutoPlay();
 
-  const burger = document.getElementById("hamburger");
-  const nav = document.getElementById("navigation");
-  const navLinks = document.querySelectorAll(".navigation a");
+// this is menu bar
+const hamburger = document.getElementById("hamburger");
+const navigation = document.getElementById("navigation");
+const links = document.querySelectorAll("#navigation a");
 
-  // Toggle menu
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
 
-  // Close menu when clicking link
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-    });
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("active");
+    hamburger.classList.remove("active");
   });
+});
 
